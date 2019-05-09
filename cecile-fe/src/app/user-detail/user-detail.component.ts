@@ -4,7 +4,6 @@ import { Location } from '@angular/common';
 
 import {User} from '../user';
 import {UserService} from '../user.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-user-detail',
@@ -12,13 +11,13 @@ import { Observable } from 'rxjs';
   styleUrls: ['./user-detail.component.css']
 })
 export class UserDetailComponent implements OnInit {
-  user: User;
+  @Input() user: User;
 
   constructor(private route: ActivatedRoute,
     private userService: UserService,
     private location: Location) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getUser();
   }
 

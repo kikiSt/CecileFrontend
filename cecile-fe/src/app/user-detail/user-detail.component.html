@@ -9,13 +9,4 @@
   </div>
   <button (click)="goBack()">go back</button>
   <button (click)="save()">save</button>
-  <div>
-      <label>Username:
-        <input #userName />
-      </label>
-      <!-- (click) passes input value to add() and then clears the input -->
-      <button (click)="add(userName.value); userName.value=''">
-        add
-      </button>
-    </div>
 </div>

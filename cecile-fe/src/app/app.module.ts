@@ -8,7 +8,6 @@ import { InMemoryDataService }  from './in-memory-data.service';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
-import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserSearchComponent } from './user-search/user-search.component';
@@ -18,7 +17,6 @@ import { UserSearchComponent } from './user-search/user-search.component';
     AppComponent,
     UserComponent,
     UserDetailComponent,
-    MessagesComponent,
     DashboardComponent,
     UserSearchComponent
   ],

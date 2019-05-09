@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
- 
 import { Observable, Subject } from 'rxjs';
  
 import {
@@ -30,7 +29,7 @@ export class UserSearchComponent implements OnInit {
       // wait 300ms after each keystroke before considering the term
       debounceTime(300),
       distinctUntilChanged(),
-      switchMap((term: string) => this.userService.searchUser(term)),
+      switchMap((term: string) => this.userService.searchUsers(term)),
     );
   }
 }
